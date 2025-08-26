@@ -1,0 +1,17 @@
+import random
+
+def tirar_dados():
+    dado1 = random.randint(1, 6)
+    dado2 = random.randint(1, 6)
+    print(f"🎲 Dado 1: {dado1}")
+    print(f"🎲 Dado 2: {dado2}")
+    print(f"Total: {dado1 + dado2}")
+
+# Programa principal
+print("Simulador de dados 🎲")
+while True:
+    opcion = input("\nPresiona ENTER para tirar los dados o escribe 'salir' para terminar: ")
+    if opcion.lower() == "salir":
+        print("¡Gracias por jugar!")
+        break
+    tirar_dados()
